@@ -8,3 +8,9 @@ target/
 
 .idea
 *.iml
+
+cobol-custom-rules
+javascript-custom-rules
+php-custom-rules
+python-custom-rules
+rpg-custom-rules
