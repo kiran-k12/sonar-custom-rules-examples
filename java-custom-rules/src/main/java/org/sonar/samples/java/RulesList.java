@@ -60,4 +60,11 @@ public final class RulesList {
   public static List<Class<? extends JavaCheck>> getJavaTestChecks() {
     return Collections.emptyList();
   }
+  
+  public static List<Class<? extends JavaCheck>> getJavaChecks() {
+  return ImmutableList.<Class<? extends JavaCheck>>builder()
+    // other rules...
+    .add(MyFirstCustomCheck.class)
+    .build();
+}
 }
