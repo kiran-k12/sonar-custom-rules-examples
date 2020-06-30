@@ -7,6 +7,8 @@ import com.google.common.collect.ImmutableList;
 import org.sonar.plugins.java.api.semantic.Symbol.MethodSymbol;
 import org.sonar.plugins.java.api.tree.MethodTree;
 import java.util.List;
+import org.sonar.check.Priority;
+import org.sonar.check.Rule;
 
 @Rule(Key = "AvoidTooManyParametersForMethod", description = "Method should not have more than 5 meters", priority = Priority.MAJOR, tags = {"bug"} )
 public class AvoidTooManyParametersForMethodRule extends IssuableSubscriptionVisitor{
