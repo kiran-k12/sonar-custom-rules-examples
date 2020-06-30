@@ -65,6 +65,7 @@ public final class RulesList {
   return ImmutableList.<Class<? extends JavaCheck>>builder()
     // other rules...
     .add(MyFirstCustomCheck.class)
+    .add(AvoidTooManyParametersForMethodRule.class)
     .build();
 }
 }
